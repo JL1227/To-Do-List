@@ -1,0 +1,90 @@
+.createTasks {
+  width: 350px;
+  height: 400px;
+  background-color: #c77dff;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.titleCreateTask {
+  background-color: #7b2cbf;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 21px;
+  border-radius: 15px 15px 0 0;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.Form label {
+  color: white;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.Form textarea {
+  border: none;
+  border-radius: 5px;
+  padding-left: 7px;
+}
+
+.Form textarea:focus {
+  outline: none;
+  filter: brightness(0.9);
+}
+
+.inputTitle {
+  height: 25px;
+  padding-top: 8px;
+  padding-left: 11px;
+}
+
+.inputTitle::placeholder {
+  position: absolute;
+  top: 8px;
+  left: 11px;
+}
+
+.inputTask {
+  height: 150px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.inputTask::placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.saveTaskButton {
+  margin-top: 12px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+
+  width: 100%;
+  font-weight: bold;
+
+  background-color: #3c096c;
+  color: white;
+}
+
+.saveTaskButton:hover {
+  background-color: #240046;
+  cursor: pointer;
+}
+
+.saveTaskButton:active {
+  background-color: #10002b;
+  cursor: pointer;
+}
