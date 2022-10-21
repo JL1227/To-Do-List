@@ -1,5 +1,6 @@
 .tasks {
   margin: 40px;
+  gap: 100px;
 
   display: flex;
   justify-content: center;
