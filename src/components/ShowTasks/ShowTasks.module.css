@@ -7,15 +7,14 @@
 .showTaskHeader {
   background-color: #7b2cbf;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 150px 400px auto;
   border-radius: 15px 15px 0 0;
+  padding: 10px 25px;
 }
 
 .showTaskHeader h2 {
   color: white;
   font-size: 21px;
   margin: 0;
-  padding: 10px 20px;
 }
