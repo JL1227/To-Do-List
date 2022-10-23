@@ -1,0 +1,36 @@
+.Task {
+  width: 650px;
+
+  background-color: #9d4edd;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 150px 400px 100px;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.taskButton {
+  border: none;
+  border-radius: 15px;
+  height: 80%;
+  width: 80%;
+  margin-top: 6px;
+
+  font-weight: bold;
+
+  background-color: #3c096c;
+  color: white;
+}
+
+.taskButton:hover {
+  background-color: #240046;
+  cursor: pointer;
+}
+
+.taskButton:active {
+  background-color: #10002b;
+  cursor: pointer;
+}

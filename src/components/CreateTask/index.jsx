@@ -5,12 +5,12 @@ const CreateTask = () => {
     <div className={styles.createTasks}>
       <h2 className={styles.titleCreateTask}>Create Tasks</h2>
       <form className={styles.Form}>
-        <label htmlFor="">Title</label>
+        <label htmlFor="">Task</label>
         <textarea
           placeholder="Insert your title..."
           className={styles.inputTitle}
         />
-        <label htmlFor="">Task</label>
+        <label htmlFor="">Description</label>
         <textarea
           placeholder="Insert your task..."
           className={styles.inputTask}

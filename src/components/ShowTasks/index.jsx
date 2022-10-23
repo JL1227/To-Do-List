@@ -1,4 +1,5 @@
 import styles from "./ShowTasks.module.css";
+import Task from "../Task";
 
 const ShowTasks = () => {
   return (
@@ -6,8 +7,12 @@ const ShowTasks = () => {
       <div className={styles.showTaskHeader}>
         <h2>Task</h2>
         <h2>Description</h2>
-        <h2>Delete</h2>
+        <h2 className={styles.delete}>Delete</h2>
       </div>
+      <Task />
+      <Task />
+      <Task />
+      <Task />
     </div>
   );
 };
