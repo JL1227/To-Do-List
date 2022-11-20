@@ -14,7 +14,7 @@ const ShowTasks = () => {
         <h2 className={styles.delete}>Delete</h2>
       </div>
       {list.map((task, index) => (
-        <Task key={index} indice={index}/>
+        <Task key={index} indice={index} task={task} />
       ))}
     </div>
   );

@@ -3,14 +3,16 @@ import { useContext } from "react";
 import { Context } from '../Tasks'
 
 
-const Task = ({ indice }) => {
+const Task = ({ indice, task }) => {
   
-  const {deleteTask} = useContext(Context)
+  const {deleteTask, } = useContext(Context)
 
   return (
     <div className={styles.Task}>
-      <p>Tarefa</p>
-      <button type="button" className={styles.taskButton}>X</button>
+      <p>{task}</p>
+      <div>
+        <button type="button" className={styles.taskButton} onClick={() => deleteTask(indice)}>X</button>
+      </div>
     </div>
   );
 };

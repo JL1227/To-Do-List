@@ -4,7 +4,6 @@ import ShowTasks from "../ShowTasks";
 
 import { useState, createContext, useEffect } from "react";
 
-
 export const Context = createContext()
 
 const Tasks = () => {
@@ -19,7 +18,9 @@ const Tasks = () => {
   }
 
   function deleteTask(i) {
-    console.log(i)
+    const taskArray = [...list]
+    taskArray.splice(i, 1)
+    setList(taskArray)
   }
 
   return (
