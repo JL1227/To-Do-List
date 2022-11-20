@@ -8,8 +8,9 @@
 .showTaskHeader {
   background-color: #7b2cbf;
 
-  display: grid;
-  grid-template-columns: 150px 400px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 515px;
   border-radius: 15px 15px 0 0;
   padding: 10px 25px;
 }

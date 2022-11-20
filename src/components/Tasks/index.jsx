@@ -2,27 +2,33 @@ import styles from "./Tasks.module.css";
 import CreateTask from "../CreateTask";
 import ShowTasks from "../ShowTasks";
 
-const Tasks = () => {
-  //const [list, setList] = useState([]);
-  //const [newItem, setNewItem] = useState("");
+import { useState, createContext, useEffect } from "react";
 
-  /*
+
+export const Context = createContext()
+
+const Tasks = () => {
+  const [list, setList] = useState([]);
+  const [newItem, setNewItem] = useState("");
+
+  // useEffect(() => setList(['T1', 'T2']), [])
+  
   function addTask() {
     setList([...list, newItem]);
     setNewItem("");
   }
 
   function deleteTask(i) {
-    let taskArray = [...list];
-    taskArray.splice(i, 1);
+    console.log(i)
   }
-  */
 
   return (
-    <div className={styles.tasks}>
-      <CreateTask />
-      <ShowTasks />
-    </div>
+    <Context.Provider value={{list, setList, newItem, setNewItem, addTask, deleteTask}}>
+      <div className={styles.tasks}>
+        <CreateTask />
+        <ShowTasks />
+      </div>
+    </Context.Provider>
   );
 };
 

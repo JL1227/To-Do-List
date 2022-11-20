@@ -2,10 +2,12 @@
   width: 650px;
 
   background-color: #9d4edd;
+  color: white;
   font-weight: bold;
 
-  display: grid;
-  grid-template-columns: 150px 400px 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 510px;
   border-radius: 15px;
   padding: 5px 10px;
   margin-top: 15px;
@@ -14,15 +16,15 @@
 
 .taskButton {
   border: none;
-  border-radius: 15px;
-  height: 80%;
-  width: 80%;
-  margin-top: 6px;
+  border-radius: 10px;
 
-  font-weight: bold;
+  height: 40px;
+  width: 70px;
+  margin-top: 10px;
 
   background-color: #3c096c;
   color: white;
+  font-weight: bold;
 }
 
 .taskButton:hover {

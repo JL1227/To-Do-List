@@ -1,11 +1,16 @@
 import styles from "./Task.module.css";
+import { useContext } from "react";
+import { Context } from '../Tasks'
 
-const Task = ({ desc }) => {
+
+const Task = ({ indice }) => {
+  
+  const {deleteTask} = useContext(Context)
+
   return (
     <div className={styles.Task}>
       <p>Tarefa</p>
-      <p>Fazer a tarefa</p>
-      <button className={styles.taskButton}>Deletar</button>
+      <button type="button" className={styles.taskButton}>X</button>
     </div>
   );
 };
